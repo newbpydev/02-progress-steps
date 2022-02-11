@@ -27,7 +27,7 @@ few HTML, CSS and JavaScript skills...
 
 ### Links
 
-- Solution URL: [GitHub](https://github.com/newbpydev/01-expanding-cards)
+- Solution URL: [GitHub](https://github.com/newbpydev/02-progress-steps)
 - Live Site URL: [Live Site](https://nostalgic-dubinsky-c474fc.netlify.app/)
 
 ## My process
