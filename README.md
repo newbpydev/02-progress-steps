@@ -1,6 +1,6 @@
-# Expanding Card
+# Progress Steps
 
-This is a solution to the Expanding Card mini project.
+This is a solution to the progress steps mini project.
 
 ## Table of contents
 
@@ -17,18 +17,18 @@ This is a solution to the Expanding Card mini project.
 
 ## Overview
 
-This is my solution to the expanding cards mini project used to learn and test a
+This is my solution to the progress steps mini project used to learn and test a
 few HTML, CSS and JavaScript skills...
 
 ### Screenshot
 
 ![](./images/screenshot-desktop.png)
-![](./images/screencast.gif)
+![](./images/screenshot-desktop-progress.png)
 
 ### Links
 
 - Solution URL: [GitHub](https://github.com/newbpydev/02-progress-steps)
-- Live Site URL: [Live Site](https://nostalgic-dubinsky-c474fc.netlify.app/)
+- Live Site URL: [Live Site](https://epic-sinoussi-1bd9ac.netlify.app/)
 
 ## My process
 
@@ -40,30 +40,35 @@ few HTML, CSS and JavaScript skills...
 
 ### What I learned
 
-I have learned on this project more about centering a page using flexbox and a
-little more about using Js to make the site more interactive.
+I have learned on this project more about making a site more interactive and how
+to manipulate the DOM with js.
 
 ```css
-@media (max-width: 30em) {
-  .container {
-    width: 100vw;
-  }
-
-  .panel:nth-of-type(4),
-  .panel:nth-of-type(5) {
-    display: none;
-  }
+:root {
+  --line-border-fill: #3498db;
+  --line-border-empty: #e0e0e0;
+}
+.progress-container::before {
+  content: '';
+  background-color: var(--line-border-empty);
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  height: .4rem;
+  width: 100%;
+  z-index: -1;
 }
 ```
 
 ### Continued development
 
-For future development, I will continue to train using the flexbox and combine
-it with the grid.
+For future development, I will continue to train using js and add more
+interactivity to sites.
 
 ### Useful resources
 
-- [MDN - flex property](https://developer.mozilla.org/en-US/docs/Web/CSS/flex) - The flex CSS shorthand property sets how a flex item will grow or shrink to fit the space available in its flex container..
+- [MDN - var()](https://developer.mozilla.org/en-US/docs/Web/CSS/var()) - The var() CSS function can be used to insert the value of a custom property (sometimes called a "CSS variable") instead of any part of a value of another property.
 
 ## Author
 
